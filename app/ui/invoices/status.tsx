@@ -1,8 +1,9 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
+import clsx from 'clsx'; // para cambiar el color segun el estado 
 
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
+    // aqui se usa el clsx para cambiar el color del span segun el estado
     <span
       className={clsx(
         'inline-flex items-center rounded-full px-2 py-1 text-xs',
